@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find a National Park!</h1>
+
+        <form action="/action_page.php">
+          <li>Enter one or more state codes: <input type="text" class="input" name="state" id= "state" value="CA nc NC" required></li>
+          <li>Max. number of results: <input type="number" class="maxNumber" name="maxNumber" id="maxNumber" value="10"></li>
+          <p><input type="submit" value="Submit"></p>
+        </form>
+          <h2></h2>
+      <section id="results" class="hidden">
+          <h3></h3>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
